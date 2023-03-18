@@ -14,7 +14,7 @@ char s;
 int d;
 for (d = '0' ; d <= '9' ; d++)
 putchar(d);
-for (s = 'a' ; s <= 'f' ; s--)
+for (s = 'a' ; s <= 'f' ; s++)
 putchar(s);
 putchar('\n');
 return (0);
