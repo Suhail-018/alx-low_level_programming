@@ -22,7 +22,7 @@ for (m = k + 1 ; m <= '9' ; m++)
 putchar(i);
 putchar(k);
 putchar(m);
-if (i != 7 || k != 8 || m != 9)
+if (i != '7' || k != '8' || m != '9')
 {
 putchar(',');
 putchar(' ');
