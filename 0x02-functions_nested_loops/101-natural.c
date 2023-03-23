@@ -23,6 +23,6 @@ else
 continue;
 }
 }
-printf("the sum is %d.", count);
+printf("%d\n", count);
 return (0);
 }
