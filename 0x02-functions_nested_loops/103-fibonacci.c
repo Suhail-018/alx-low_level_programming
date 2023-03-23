@@ -7,7 +7,7 @@
 int main(void)
 {
 int n;
-unsigned long sum, fib1 = 0, fib2 = 1, count;
+unsigned long sum, fib1 = 0, fib2 = 1, count = 0;
 {
 for (n = 1; n <= 33; n++)
 {
