@@ -14,7 +14,7 @@ if (n % 3 == 0)
 {
 count += n;
 }
-else if (n % 5 == n)
+else if (n % 5 == 0)
 {
 count += n;
 }
