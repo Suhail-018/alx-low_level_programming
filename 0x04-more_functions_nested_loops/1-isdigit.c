@@ -1,7 +1,7 @@
 #include "main.h"
 #include <ctype.h>
 /**
-* _isupper - uppercase letters
+* _isdigit - digit from 0-9
 * @c: char to check
 *
 * Return: 0 or 1
