@@ -1,8 +1,8 @@
 #include "lists.h"
-#include <stdlib.h> #
-include <stdio.h>
+#include <stdlib.h>
+#include <stdio.h>
 /**
-free_listint_safe - frees a listint_t linked list
+* free_listint_safe - frees a listint_t linked list
  * @h: pointer to pointer to first node of the list
  *
  * Return: the size of the list that was freed
