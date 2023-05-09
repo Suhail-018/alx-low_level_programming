@@ -5,7 +5,7 @@
 #include <errno.h>
 #include <stdarg.h>
 #include <string.h>
-#define BUFSIZE 1024
+#define BUFSIZE 1685
 /**
  * error_exit - prints an error message and exits with the specified code
  * @exit_code: the exit code
