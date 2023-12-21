@@ -1,29 +1,27 @@
+# Variables
 CC = gcc
-SRC = main.c school.c
+SRC = $(wildcard *.c)
 OBJ = $(SRC:.c=.o)
 NAME = school
-CFLAGS = -Wall -Werror -Wextra -pedantic
 RM = rm -f
+CFLAGS = -Wall -Werror -Wextra -pedantic
 
-.PHONY: all clean oclean fclean re
-
+# Rules
 all: $(NAME)
 
-$(NAME): $(OBJ)
-	$(CC) $(OBJ) -o $(NAME) $(CFLAGS)
-
-%: %.c
-	$(CC) -c $< -o $@ $(CFLAGS)
+$(NAME): $(OBJ) m.h
+	$(CC) $(CFLAGS) $(OBJ) -o $@
 
 clean:
-	$(RM) *~ $(NAME)
+	$(RM) *~ *# $(NAME)
 
 oclean:
 	$(RM) $(OBJ)
 
 fclean: clean oclean
-	$(RM) $(NAME)
 
-re: fclean all
+re: oclean all
 
-$(OBJ): m.h
+# Implicit rule to compile individual .c files without listing all .o files
+%.o: %.c
+	$(CC) $(CFLAGS) -c $< -o $@
